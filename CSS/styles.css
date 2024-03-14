@@ -1,32 +1,309 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #2A384C;
 }
 
-.red{
-  color: red;
+nav{
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
 }
-.yellow{
-  color: blue;
+nav ul li{
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  margin: 10px 20px;
 }
-.bold{
+nav ul li a{
+color: #F0F0F0;
+text-decoration: none;
+font-weight: bolder;
+font-size: 20px;
+}
+nav ul li a:hover{
+color: #A0B2C2;
+}
+.nav-home{
+  color: #A0B2C2;
+}
+.logo{
+  color: #F0F0F0;
+  font-size: 32px;
   font-weight: bolder;
-  color: purple;
-  margin-top: 10px;
-  font-style: italic;
 }
-.bold:hover{
+.logo:hover{
+color: #A0B2C2;
+transition: all 0.5s ease-in-out;
+}
+.main{
+ margin-left: 8%;
+ margin-top: 15%;
+ color: #A0B2C2;
+
+}
+.active{
+  color: #A0B2C2;
+  font-weight: bolder;
+}
+.active:hover{
+ color: #2A384C;
+ background-color: #A0B2C2;
+}
+
+.main .main-content{
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
   
-  border: solid;
+}
+.main-content a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #A0B2C2;
+  border:  2px solid #A0B2C2;
+  border-radius: 2px;
+  font-size: 19px;
+  color: #2A384C;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 5s;
+}
+.main-content a:nth-child(2){
+  background: transparent;
+  color: #A0B2C2;
+}
+.main-content a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #2A384C;
+  z-index: -1;
+  transition: .10s;
+}
+.main-content a:hover::before{
+  width: 100%;
+}
+.main-content a:nth-child(2)::before{
+  background: #A0B2C2;
+}
+.main-content a:nth-child(2):hover{
+  color: #2A384C;
+}
+.main-content a:hover{
+  color: #A0B2C2;
+}
+
+.main p{
+  margin-bottom: 100px;
+  font-size: auto;
+  color: #F0F0F0;
+}
+.main h3{
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #A0B2C2;
+}
+.main h1{
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #F0F0F0;
+}
+
+.main-link{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 40px;
+  width: 170px;
+  background: #2A384C;
+}
+.main-link a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 20px solid #A0B2C2;
+  font-size: 20px;
+  margin: 10px 20px;
+  border-radius: 20px;
+  
+  }
+ 
+  .main-link a:hover{
+    color: #A0B2C2;
+  }
+  .main-link a:nth-child(2):hover{
+    color: #2A384C;
+  }
+  .main-link a:nth-child(3):hover{
+    color: #2A384C;
+  }
+  .main-link a:nth-child(1):hover{
+    color: #2A384C;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+a {
+  text-decoration: none;
+  color: white;
+} */
+/* 
+body {
+  background-color: #000000;
+  color: whitesmoke;
+  /* border: solid 100px; */
+  /* border-color: #3c0753; */
+  /* font-size: large;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  text-align: center;
+} */ */
+/* .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 5px 5px 10px 5px rgb(43, 9, 58);
+}
+.menu > a {
+  padding: 10px;
+  color: gray !important;
+  transition: all 0.5s ease-in-out;
+}
+.menu > a:hover {
+  padding: 10px;
+  background: rgb(75, 16, 100);
+  color: white;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+} */
+/* .logo-text {
+  height: 100;
+  width: 20%;
+  left: 10%;
+  font-family: "lato" sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: #ffff;
+  cursor: pointer;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  display: flex;
+  gap: 5px;
 } */
 
-table,
+/* Exploring the determinants factors of maternal mortality in Nigeria. */
+/* home_hero */
+/* .home__hero {
+  padding-top: 2rem;
+  flex-grow: 1;
+  width: 70vw;
+  margin: auto;
+}
+.home__hero__title {
+  padding: 5rem;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  box-shadow: 3px 10px 10px 5px rgb(35, 6, 48);
+}
+h2 {
+  text-align: justify;
+}
+.main {
+  border-right: 100vw;
+}
+.text-gray {
+  color: gray;
+} */
+/* .text-gray {
+  text-align: justify;
+  text-align: center;
+} */
+/* table,
 th,
 td {
   border: 1px solid black;
-}
-.div1 {
+} */
+/* .div1 {
   border: 5px solid black;
   padding: 10px;
   width: 400px;
@@ -35,8 +312,8 @@ td {
   background-color: lightcoral;
   float: left;
   margin: 10px;
-}
-
+} */
+/* 
 h2 {
   background-color: lightblue;
   color: black;
@@ -51,70 +328,11 @@ h1 {
 }
 h3 {
   text-align: center;
-}
-th {
+} */
+/* th {
   background-color: lightblue;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background: #fafafa;
-  
-}
-.main {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background: 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.main .navbar {
-  position: absolute;
-  height: auto;
-  width: 100%;
-  margin: 0 0 0 0;
-  background: rgba(0, 0, 0, 0.2);
-}
-.main .navbar .logo {
-  position: relative;
-  height: 100;
-  width: 20%;
-  left: 10%;
-  font-family: "lato" sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  color: #ffff;
-  cursor: pointer;
-  float: left;
-  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-}
-.main .navbar ul {
-  position: relative;
-  height: 100;
-  width: 50%;
-  color: #ffff;
-  float: right;
-}
-.main .navbar ul li {
-  list-style-type: none;
-  display: inline-block;
-}
-.main .navbar ul a {
-  position: relative;
-  text-decoration: none;
-  display: block;
-  box-sizing: border-box;
-  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-family: "cinzel" sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  padding: 10px;
-  width: 100px;
-  height: auto;
-}
+
 
 .text-center {
   text-align: center;
@@ -130,6 +348,40 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}  */
+
+/* global */
+/* .text-white {
+  color: white !important;
+}
+.text-gray {
+  color: gray;
 }
 
+.text-center {
+  text-align: center;
+}
 
+.text-purple {
+  color: rgb(13, 2, 19);
+}
+.font-large {
+  font-size: 2rem;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.gap {
+  gap: 0.2rem;
+}
+.mb-4 {
+  margin-bottom: 20px;
+} */
+/* .quote__border {
+  margin-top: 20px;
+  padding: 20px;
+  border-left: solid #0f0114 5px;
+} */
