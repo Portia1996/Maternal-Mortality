@@ -38,7 +38,8 @@ color: #A0B2C2;
   color: #A0B2C2;
 }
 .logo{
-  color: #F0F0F0;
+  color: #2A384C;
+  background-color: #A0B2C2;
   font-size: 32px;
   font-weight: bolder;
 }
@@ -166,6 +167,50 @@ transition: all 0.5s ease-in-out;
   }
   .main-link a:nth-child(1):hover{
     color: #2A384C;
+  }
+
+  /* STYLESHEET FOR ABOUT ME LINK */
+  
+  .about-me{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #2A384C;
+  }
+  .social-link{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .social-link a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 20px solid #A0B2C2;
+    font-size: 20px;
+    margin: 10px 20px;
+    border-radius: 20px;
+  }
+  .social-link a:hover{
+    color: #2A384C;
+    background-color: #2A384C;
+  }
+  .about-logo{
+    color: #A0B2C2;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .about-logo:hover{
+    color: #2A384C;
+    background-color: #A0B2C2;
+    
   }
   
 
