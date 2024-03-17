@@ -37,6 +37,9 @@ color: #A0B2C2;
 .nav-home{
   color: #A0B2C2;
 }
+ nav img{
+  
+}
 .logo{
   color: #2A384C;
   background-color: #A0B2C2;
@@ -168,7 +171,50 @@ transition: all 0.5s ease-in-out;
   .main-link a:nth-child(1):hover{
     color: #2A384C;
   }
+  .image{
+    width: 35%;
+    height: 80%;
+    bottom: 10%;
+    position: absolute;
+    right: 90px;
+    background-color: #2A384C;
+    
+  }
 
+.image img{
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  size: 10vh;
+  transition: bottom 1s, left 1s;
+}
+.image:hover .splash{
+  bottom: 40px;
+}
+/* .image:hover .porsh{
+left: 45%;
+} */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
   /* STYLESHEET FOR ABOUT ME LINK */
   
   .about-me{
@@ -210,7 +256,20 @@ transition: all 0.5s ease-in-out;
   .about-logo:hover{
     color: #2A384C;
     background-color: #A0B2C2;
-    
+  }
+
+  .about-body h1{
+   display: flex;
+   justify-content: safe;
+   color: #A0B2C2;
+   margin: 70px;
+   padding: 20px;
+  }
+  .foto img{
+   padding: 10px;
+   margin: 10px;
+   width: 30vh;
+   height: 20%;
   }
   
 

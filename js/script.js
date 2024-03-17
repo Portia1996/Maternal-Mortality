@@ -11,4 +11,4 @@ navbar.innerHTML = `
           <a href="./pages/blog.html" class="">Blog</a>
           <a href="#" class="">Portfolio</a>
           <a href="" class="">Contact</a>
-        </div>`
+        </div>` 
