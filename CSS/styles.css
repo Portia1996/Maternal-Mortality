@@ -178,7 +178,6 @@ transition: all 0.5s ease-in-out;
     position: absolute;
     right: 90px;
     background-color: #2A384C;
-    
   }
 
 .image img{
@@ -187,7 +186,7 @@ transition: all 0.5s ease-in-out;
   left: 50%;
   bottom: 0;
   transform: translate(-50%);
-  size: 10vh;
+  size: 100vh;
   transition: bottom 1s, left 1s;
 }
 .image:hover .splash{
