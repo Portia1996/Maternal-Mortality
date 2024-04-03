@@ -6,6 +6,8 @@
 }
 body .btn {
   background: #2a384c;
+  overflow-x: hidden;
+  width: 100vw;
 }
 .hero {
   position: relative;
@@ -40,8 +42,7 @@ nav ul li a:hover {
 .nav-home {
   color: #a0b2c2;
 }
-nav img {
-}
+
 .logo {
   color: #2a384c;
   background-color: #a0b2c2;
@@ -200,20 +201,29 @@ body .about {
   height: 100vh;
   background: #a0b2c2;
 }
+
+
+
+
+
+/* css for about me  */
+
 .btag {
   height: 100vh;
   background: linear-gradient(
     to left,
     #2a384c 0%,
-    #2a384c 90%,
+    #2a384c 100%,
     #a0b2c2 20%,
     #a0b2c2 50%
   );
+  overflow: hidden;
+  width: 100vw;
 }
 .png {
   width: 50%;
   margin-left: 50%;
-  padding: ;
+  /* padding: ; */
 }
 .htn {
   margin: 50px auto 20px auto;
@@ -304,4 +314,42 @@ body .about {
 .bubbles img:nth-child(11) {
   animation-delay: 8s;
   width: 80px;
+}
+.bubbles img:nth-child(12) {
+  animation-delay: 2s;
+  width: 40px;
+}
+.bubbles img:nth-child(13) {
+  animation-delay: 4s;
+  width: 70px;
+}
+.bubbles img:nth-child(14) {
+  animation-delay: 9s;
+  width: 50px;
+}
+.bubbles img:nth-child(15) {
+  animation-delay: 6s;
+  width: 50px;
+}
+.bubbles img:nth-child(16) {
+  animation-delay: 3s;
+  width: 60px;
+}
+.bubbles img:nth-child(17) {
+  animation-delay: 7s;
+  width: 80px;
+}
+
+
+
+/* css for projects*/
+.projects{
+  background-color: #2a384c;
+}
+
+
+
+/* css for projects*/
+.skills{
+  background-color: #2a384c;
 }
